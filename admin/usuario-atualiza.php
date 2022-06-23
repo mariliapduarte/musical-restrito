@@ -41,17 +41,17 @@ if(isset($_POST['atualizar'])){
 
       <div class="form-group">
         <label for="nome">Nome: </label>
-        <input value=<?=$usuario['nome'] ?>  class="form-control" required type="text" id="nome" name="nome" >
+        <input value=<?=$usuario['nome'] ?>  class="" required type="text" id="nome" name="nome" >
       </div>
 
       <div class="form-group">
         <label for="email">E-mail:</label>
-        <input value=<?=$usuario['email'] ?> class="form-control" required type="email" id="email" name="email" >
+        <input value=<?=$usuario['email'] ?> class="" required type="email" id="email" name="email" >
       </div>
 
       <div class="form-group">
         <label for="nova-senha">Senha</label>
-        <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
+        <input class="" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
       </div>
 
       <div class="form-group">

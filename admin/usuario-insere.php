@@ -19,36 +19,36 @@ if (isset($_POST['inserir'])){
 ?>
        
 <div class="conteudo limitador">
-	<article class="col-12 bg-white rounded shadow my-1 py-4">
-		<h2 class="text-center">Inserir Usuário</h2>
+	<article class="">
+		<h2 class="">Inserir Usuário</h2>
 		
-		<form class="mx-auto w-75" action="" method="post" id="form-inserir" name="form-inserir">
+		<form class="" action="" method="post" id="form-inserir" name="form-inserir">
 
-			<div class="form-group">
+			<div class="">
 				<label for="nome">Nome:</label>
-				<input class="form-control" type="text" id="nome" name="nome" required>
+				<input class="" type="text" id="nome" name="nome" required>
 			</div>
 
-			<div class="form-group">
+			<div class="">
 				<label for="email">E-mail:</label>
-				<input class="form-control" type="email" id="email" name="email" required>
+				<input class="" type="email" id="email" name="email" required>
 			</div>
 
-			<div class="form-group">
+			<div class="">
 				<label for="senha">Senha:</label>
-				<input class="form-control" type="password" id="senha" name="senha" required>
+				<input class="" type="password" id="senha" name="senha" required>
 			</div>
 
-			<div class="form-group">
+			<div class="">
 				<label for="tipo">Tipo:</label>
-				<select class="custom-select" name="tipo" id="tipo" required>
+				<select class="" name="tipo" id="tipo" required>
 					<option value=""></option>
 					<option value="editor">Editor</option>
 					<option value="admin">Administrador</option>
 				</select>
 			</div>
 			
-			<button class="btn btn-primary" id="inserir" name="inserir">Inserir usuário</button>
+			<button class="button" id="inserir" name="inserir">Inserir usuário</button>
 		</form>
 			
 	</article>

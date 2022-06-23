@@ -12,11 +12,11 @@
       </p>
       <hr class="my-4">
       <p class="lead">
-        <a class="btn btn-primary" href="meu-perfil.php" >Meu perfil</a>
-        <a class="btn btn-primary" href="posts.php">Gerenciar comunicados</a>
+        <a class="button" href="meu-perfil.php" >Meu perfil</a>
+        <a class="button" href="posts.php">Gerenciar comunicados</a>
 
         <?php if($_SESSION['tipo'] == 'admin'){ ?>
-        <a class="btn btn-primary" href="usuarios.php">Gerenciar Usuários</a>
+        <a class="button" href="usuarios.php">Gerenciar Usuários</a>
         <?php } ?>
         
       </p>
