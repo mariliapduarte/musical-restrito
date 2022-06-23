@@ -19,7 +19,7 @@ $pagina = basename($_SERVER['PHP_SELF']);
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Admin | Microblog</title>
+  <title>Musical Talentos - Restrito</title>
 
   <link rel="stylesheet" href="../css/style.css">
 </head>
