@@ -16,7 +16,7 @@ $quantidade = count($usuarios);
 		</h2>
 
 		<p>
-				<a class="button-insere" href="usuario-insere.php">Inserir novo usuário</a>
+				<a class="button-insere" href="usuario-insere.php">Inserir Novo</a>
 		</p>
 				
 		<div class="">

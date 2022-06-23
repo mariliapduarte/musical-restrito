@@ -40,6 +40,8 @@ if(isset($_POST['atualizar'])){
     <form class="mx-auto w-75" action="" method="post" id="form-atualizar" name="form-atualizar">
 
       <div class="form-group">
+      <b>Nível de acesso do usuário: </b><span class="button-outro"><?=$_SESSION['tipo']?></span> <br>
+        
         <label for="nome">Nome: </label>
         <input value=<?=$usuario['nome'] ?>  class="" required type="text" id="nome" name="nome" >
       </div>

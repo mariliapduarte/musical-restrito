@@ -8,7 +8,7 @@
           Olá, <?=$_SESSION['nome']?> 
       </h2>
       <p class="lead">Você está no <b>painel de controle e administração</b> do
-  site Musical Talentos e seu <b>nível de acesso</b> é <span class="badge badge-info"><?=$_SESSION['tipo']?></span>.
+  site Musical Talentos.
       </p>
       <hr class="my-4">
       <p class="lead">
@@ -18,7 +18,10 @@
         <?php if($_SESSION['tipo'] == 'admin'){ ?>
         <a class="button" href="usuarios.php">Gerenciar Usuários</a>
         <?php } ?>
-        
+
+        <br>
+
+       
       </p>
     </article>
         

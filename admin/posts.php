@@ -13,7 +13,7 @@ $quantidade = count($posts);
   <article class="">
     <h2 class="">Comunicado <span class="button-count"><?= $quantidade ?></span></h2>
     <p class="">
-      <a class="button-insere" href="post-insere.php">Inserir novo comunicado</a>
+      <a class="button-insere" href="post-insere.php">Inserir Novo</a>
     </p>
             
     <div class=""> 
