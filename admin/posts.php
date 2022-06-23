@@ -19,7 +19,7 @@ $quantidade = count($posts);
     <div class=""> 
 
       <table id="customers">
-        <thead class="">
+        <thead>
           <tr>
             <th>Título</th>
             <th>Data</th>
@@ -28,7 +28,7 @@ $quantidade = count($posts);
             <th>Autor</th>
             <?php } ?>
             
-            <th colspan="2" class="">Operações</th>
+            <th colspan="2">Operações</th>
           </tr>
         </thead>
       
@@ -44,14 +44,14 @@ $quantidade = count($posts);
       <td> <?=$post['autor']?> </td>
       <?php } ?>
 
-      <td class="button-atualiza">
-          <a class="" 
+      <td>
+          <a class="button-atualiza"" 
             href="post-atualiza.php?id=<?=$post['id']?>"> 
             Atualizar
           </a>
       </td>
-      <td class="button-exclui">
-          <a class="" 
+      <td>
+          <a class="button-exclui" 
             href="post-exclui.php?id=<?=$post['id']?>">
             Excluir
           </a>
