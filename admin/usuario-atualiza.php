@@ -74,7 +74,7 @@ if(isset($_POST['atualizar'])){
         </select>
       </div>
       
-      <button class="btn btn-primary" name="atualizar">Atualizar usuário</button>
+      <button class="button" name="atualizar">Atualizar usuário</button>
     </form>
       
   </article>

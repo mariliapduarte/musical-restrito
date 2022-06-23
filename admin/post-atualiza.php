@@ -84,7 +84,7 @@ header("location:posts.php");
         accept="image/png, image/jpeg, image/gif, image/svg+xml">
       </div>
         
-        <button class="btn btn-primary" name="atualizar">Atualizar post</button>
+        <button class="button" name="atualizar">Atualizar post</button>
     </form>
       
   </article>
