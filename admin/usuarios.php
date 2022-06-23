@@ -9,25 +9,25 @@ $quantidade = count($usuarios);
 <!-- TESTE <pre><?=var_dump($usuarios)?></pre> -->
 
 <div class="conteudo limitador">
-	<article class="col-12 bg-white rounded shadow my-1 py-4">
+	<article class="">
 		
-		<h2 class="text-center">
-		Usuários <span class="badge badge-primary"><?= $quantidade ?></span>
+		<h2>
+		Usuários <span class="button-count"><?= $quantidade ?></span>
 		</h2>
 
-		<p class="lead text-right">
-				<a class="btn btn-primary" href="usuario-insere.php">Inserir novo usuário</a>
+		<p>
+				<a class="button-insere" href="usuario-insere.php">Inserir Novo</a>
 		</p>
 				
-		<div class="table-responsive">
+		<div class="">
 		
-			<table class="table table-hover">
-				<thead class="thead-light">
+			<table id="customers">
+				<thead class="">
 					<tr>
 						<th>Nome</th>
 						<th>E-mail</th>
 						<th>Tipo</th>
-						<th colspan="2" class="text-center">Operações</th>
+						<th colspan="2" class="">Operações</th>
 					</tr>
 				</thead>
 
@@ -38,14 +38,14 @@ $quantidade = count($usuarios);
 						<td> <?=$usuario['nome']?> </td>
 						<td> <?=$usuario['email']?> </td>
 						<td> <?=$usuario['tipo']?> </td>
-						<td class="text-center">
-							<a class="btn btn-warning btn-sm" 
+						<td class="">
+							<a class="button-atualiza" 
 							href="usuario-atualiza.php?id=<?=$usuario['id']?>"> <!-- para concatenar, colocar antes da ultima " um & e o testo que desejar -->
 								Atualizar
 							</a>
 						</td>
-						<td class="text-center">
-							<a class="btn btn-danger btn-sm excluir" 
+						<td class="">
+							<a class="button-exclui" 
 							href="usuario-exclui.php?id=<?=$usuario['id']?>">
 								Excluir
 							</a>

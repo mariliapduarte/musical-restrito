@@ -65,25 +65,25 @@ if( isset($_POST['entrar']) ){
 }
 ?>
 <div class="conteudo limitador">
-  <article class="col-12 bg-white rounded shadow my-1 py-4">
-    <h2 class="text-center">Acesso Restrito</h2>
+  <article class="">
+    <h2>Acesso Restrito</h2>
 
-    <form action="" method="post" id="form-login" name="form-login" class="mx-auto w-50">
+    <form action="" method="post" id="form-login" name="form-login" class="">
 
-      <p class="my-2 alert alert-warning text-center">
+      <p class="">
         <?=$feedback?>
       </p>
 
-      <div class="form-group">
+      <div class="">
         <label for="email">E-mail:</label>
-        <input class="form-control" type="email" id="email" name="email">
+        <input class="" type="email" id="email" name="email">
       </div>
-      <div class="form-group">
+      <div class="">
         <label for="senha">Senha:</label>
-        <input class="form-control" type="password" id="senha" name="senha">
+        <input class="" type="password" id="senha" name="senha">
       </div>
 
-      <button class="btn btn-primary btn-lg" name="entrar" type="submit">Entrar</button>
+      <button class="button" name="entrar" type="submit">Entrar</button>
 
     </form>
   </article>

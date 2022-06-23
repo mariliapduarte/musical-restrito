@@ -10,16 +10,16 @@ $quantidade = count($posts);
 ?>      
     
 <div class="conteudo limitador">
-  <article class="col-12 bg-white rounded shadow my-1 py-4">
-    <h2 class="text-center">Comunicado <span class="badge badge-primary"><?= $quantidade ?></span></h2>
-    <p class="lead text-right">
-      <a class="btn btn-primary" href="post-insere.php">Inserir novo comunicado</a>
+  <article class="">
+    <h2 class="">Comunicado <span class="button-count"><?= $quantidade ?></span></h2>
+    <p class="">
+      <a class="button-insere" href="post-insere.php">Inserir Novo</a>
     </p>
             
-    <div class="table-responsive"> 
+    <div class=""> 
 
-      <table class="table table-hover">
-        <thead class="thead-light">
+      <table id="customers">
+        <thead>
           <tr>
             <th>Título</th>
             <th>Data</th>
@@ -28,7 +28,7 @@ $quantidade = count($posts);
             <th>Autor</th>
             <?php } ?>
             
-            <th colspan="2" class="text-center">Operações</th>
+            <th colspan="2">Operações</th>
           </tr>
         </thead>
       
@@ -44,14 +44,14 @@ $quantidade = count($posts);
       <td> <?=$post['autor']?> </td>
       <?php } ?>
 
-      <td class="text-center">
-          <a class="btn btn-warning btn-sm" 
+      <td>
+          <a class="button-atualiza"
             href="post-atualiza.php?id=<?=$post['id']?>"> 
             Atualizar
           </a>
       </td>
-      <td class="text-center">
-          <a class="btn btn-danger btn-sm excluir" 
+      <td>
+          <a class="button-exclui" 
             href="post-exclui.php?id=<?=$post['id']?>">
             Excluir
           </a>
