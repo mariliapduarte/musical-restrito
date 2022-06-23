@@ -45,7 +45,7 @@ $quantidade = count($posts);
       <?php } ?>
 
       <td>
-          <a class="button-atualiza"" 
+          <a class="button-atualiza"
             href="post-atualiza.php?id=<?=$post['id']?>"> 
             Atualizar
           </a>
