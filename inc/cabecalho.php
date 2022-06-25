@@ -3,18 +3,28 @@
 $pagina = basename($_SERVER['PHP_SELF']); /* Essa função consegue extrair o nome do arquivo aberto - $_SERVER['PHP_SELF'] - é um array pré configurado, do PHP */
 
 
-// Parte 02: Condicional para avaliar qual pág está aberta e definir qual título utilizar
-switch ($pagina) {
-    case 'index.php':
-        $titulo = "Página Inicial";
-        break; /* break - se for verdadeiro pare por aqui - se não tivesse o break ia ficar carregando o pag infinitamemte ou poderia dar um resultsado inesperado */
-    case 'noticias.php':
-        $titulo = "Notícias e Apoio";
-        break;
-    default:
-        $titulo = "Contato e Inscrições";
-        break;
+/* Parte 2: Condicional para avaliar qual pagina está aberta
+e defini qual titulo usar */
+
+switch ( $pagina ) {
+    case 'admin/index.php':$titulo = "Pagina inicial"; Break;
+    case 'admin/meu-perfil.php':$titulo = "Meu perfil"; Break;
+    case 'admin/usuario-atualiza.php':$titulo = "Usuario - atualizar"; Break;
+    case 'admin/usuario-exclui.php':$titulo = "Usuario - excluir"; Break;
+    case 'admin/usuario-insere.php':$titulo = "Usuario - inserir"; Break;
+    case 'admin/usuarios.php':$titulo = "Usuarios - listar"; Break;
+    case 'admin/post-atualiza.php':$titulo = "Posts - atualizar"; Break;
+    case 'admin/post-exclui.php':$titulo = "Posts - exclui"; Break;
+    case 'admin/post-insere.php':$titulo = "Posts - inserir"; Break;
+    case 'admin/posts.php':$titulo = "Posts - listar"; Break;
+    case 'search.php':$titulo = "Posts - procura"; Break;
+    case 'login.php':$titulo = "Login de usuarios"; Break;
+    case 'index.php':$titulo = "home"; Break;
+    case 'post-detalhe.php':$titulo = "detalhes"; Break;
+    default: $titulo = "Contato"; break; 
 }
+
+// echo $titulo
 
 
 ?>
@@ -31,6 +41,7 @@ switch ($pagina) {
     <title><?= $titulo ?></title>
 
     <!-- Atalho CTRL+clicar no link, cria pasta e arquivo automaticamente -->
+    <!-- Formatação para pasta index.php e login.php -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>

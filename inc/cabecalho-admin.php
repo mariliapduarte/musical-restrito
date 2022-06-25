@@ -13,6 +13,31 @@ if(isset($_GET['sair'])) {
 
 // Guardando o nome da página atual
 $pagina = basename($_SERVER['PHP_SELF']);
+
+
+/* Parte 2: Condicional para avaliar qual pagina está aberta
+e defini qual titulo usar */
+
+switch ( $pagina ) {
+  case 'admin/index.php':$titulo = "Pagina inicial"; Break;
+  case 'admin/meu-perfil.php':$titulo = "Meu perfil"; Break;
+  case 'admin/usuario-atualiza.php':$titulo = "Usuario - atualizar"; Break;
+  case 'admin/usuario-exclui.php':$titulo = "Usuario - excluir"; Break;
+  case 'admin/usuario-insere.php':$titulo = "Usuario - inserir"; Break;
+  case 'admin/usuarios.php':$titulo = "Usuarios - listar"; Break;
+  case 'admin/post-atualiza.php':$titulo = "Posts - atualizar"; Break;
+  case 'admin/post-exclui.php':$titulo = "Posts - exclui"; Break;
+  case 'admin/post-insere.php':$titulo = "Posts - inserir"; Break;
+  case 'admin/posts.php':$titulo = "Posts - listar"; Break;
+  case 'search.php':$titulo = "Posts - procura"; Break;
+  case 'login.php':$titulo = "Login de usuarios"; Break;
+  case 'index.php':$titulo = "home"; Break;
+  case 'post-detalhe.php':$titulo = "detalhes"; Break;
+  default: $titulo = "Contato"; break; 
+}
+
+// echo $titulo
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -21,6 +46,8 @@ $pagina = basename($_SERVER['PHP_SELF']);
   <meta charset="utf-8">
   <title>Musical Talentos - Restrito</title>
 
+    <!-- Atalho CTRL+clicar no link, cria pasta e arquivo automaticamente -->
+    <!-- Formatação para demais pastas em diretorios diferentes -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
