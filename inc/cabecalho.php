@@ -1,3 +1,5 @@
+<?php ob_start();?>
+
 <?php
 // Parte 01: Identificar o arquivo aberto
 $pagina = basename($_SERVER['PHP_SELF']); /* Essa função consegue extrair o nome do arquivo aberto - $_SERVER['PHP_SELF'] - é um array pré configurado, do PHP */

@@ -1,3 +1,5 @@
+<?php ob_start();?>
+
 <?php
   require "funcoes-sessao.php"; 
   verificaAcesso();

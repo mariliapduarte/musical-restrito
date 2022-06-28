@@ -20,9 +20,7 @@
             <script src="../js/contador-de-caracteres.js"></script>
         <?php } ?>
 
-
-
-
-
 </body>
 </html>
+
+<?php ob_end_flush(); ?>
