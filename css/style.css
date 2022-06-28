@@ -380,9 +380,6 @@ h4 {
     padding: 15px;
 }
 
-h4 a {
-    color: rgb(255, 153, 0);
-}
 
 @media screen and (min-width: 500px) {
     .imgp img {
