@@ -9,12 +9,13 @@
 
     </footer>
 
+        <!-- Formatação cabeçalho -->
         <script src="js/menu.js"></script>
-        <!-- Importar a biblioteca vanillaMasked.min.js -->
-        <script src="js/vanilla-masker.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <!-- <script src="js/calcular-idade.js"></script> -->
+
+        <!-- Formatação carrossel -->
         <script src="js/carro.js"></script>
 
 </body>
 </html>
+
+<?php ob_end_flush(); ?>
